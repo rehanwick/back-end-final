@@ -4,7 +4,7 @@ const UserCtrl = require('../controllers/index.controllers')
 
 
 const router = express.Router();
-router.get( '/', UserCtrl.getIndex);
+router.get( '/score', UserCtrl.getIndex);
 router.get('/profile/:email' , UserCtrl.getUserByEmail  ) ; 
 
 

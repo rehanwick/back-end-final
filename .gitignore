@@ -1,18 +1,2 @@
 node_modules
 
-[Unit]
-Description=YourAppName
-After=multi-user.target
-
-[Service]
-ExecStart=/usr/bin/node /home/ec2-user/back-end-final/src/index.js
-Restart=always
-RestartSec=10
-StandardOutput=syslog
-StandardError=syslog
-SyslogIdentifier=YourAppName
-User=ec2-user
-EnvironmentFile=/home/ec2-user/back-end-final/.env
-
-[Install]
-WantedBy=multi-user.target
