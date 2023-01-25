@@ -9,7 +9,7 @@ const PORT = 3000;
 
 app.use(express.urlencoded({extended:true})) ; 
 
-//app.use(cors()) ;
+app.use(cors()) ;
 app.use(express.static(path.join(process.cwd() , 'public' )));
  
 app.use( express.json());
